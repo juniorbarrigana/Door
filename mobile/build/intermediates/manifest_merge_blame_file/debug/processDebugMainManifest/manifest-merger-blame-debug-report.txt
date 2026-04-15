@@ -1,0 +1,193 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.door"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="26"
+8-->INJECTED
+9        android:targetSdkVersion="36" />
+9-->INJECTED
+10
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:4:5-68
+11-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:4:22-65
+12    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+12-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:5:5-75
+12-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:5:22-72
+13
+14    <permission
+14-->[androidx.core:core:1.18.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\198b03d8a94e1beaf02f82886d1cb412\workspace\transformed\core-1.18.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.example.door.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.18.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\198b03d8a94e1beaf02f82886d1cb412\workspace\transformed\core-1.18.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.18.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\198b03d8a94e1beaf02f82886d1cb412\workspace\transformed\core-1.18.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.example.door.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.18.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\198b03d8a94e1beaf02f82886d1cb412\workspace\transformed\core-1.18.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.18.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\198b03d8a94e1beaf02f82886d1cb412\workspace\transformed\core-1.18.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:7:5-40:19
+21        android:allowBackup="true"
+21-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:8:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.18.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\198b03d8a94e1beaf02f82886d1cb412\workspace\transformed\core-1.18.0\AndroidManifest.xml:28:18-86
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+24-->INJECTED
+25        android:icon="@mipmap/ic_launcher"
+25-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:9:9-43
+26        android:label="@string/app_name"
+26-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:10:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:11:9-54
+28        android:supportsRtl="true"
+28-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:12:9-35
+29        android:testOnly="true"
+30        android:theme="@style/Theme.Door" >
+30-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:13:9-42
+31        <activity
+31-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:15:9-27:20
+32            android:name="com.example.door.presentation.MainActivity"
+32-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:16:13-54
+33            android:excludeFromRecents="true"
+33-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:19:13-46
+34            android:exported="true"
+34-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:17:13-36
+35            android:launchMode="singleInstance"
+35-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:22:13-48
+36            android:noHistory="true"
+36-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:20:13-37
+37            android:taskAffinity=""
+37-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:21:13-36
+38            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+38-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:18:13-72
+39            <intent-filter>
+39-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:23:13-26:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:24:17-69
+40-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:24:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:25:17-77
+42-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:25:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <service
+46-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:29:9-39:19
+47            android:name="com.example.door.WearMessageListenerService"
+47-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:30:13-55
+48            android:exported="true" >
+48-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:31:13-36
+49            <intent-filter>
+49-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:32:13-38:29
+50                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
+50-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:33:17-91
+50-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:33:25-88
+51
+52                <data
+52-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:34:17-37:45
+53                    android:host="*"
+53-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:35:21-37
+54                    android:pathPrefix="/unlock_phone"
+54-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:36:21-55
+55                    android:scheme="wear" />
+55-->C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\AndroidManifest.xml:37:21-42
+56            </intent-filter>
+57        </service>
+58
+59        <activity
+59-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\c7f927aafd84f7788b4c936582b0d279\workspace\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+60            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+60-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\c7f927aafd84f7788b4c936582b0d279\workspace\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+61            android:exported="false"
+61-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\c7f927aafd84f7788b4c936582b0d279\workspace\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+62            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+62-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\c7f927aafd84f7788b4c936582b0d279\workspace\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+63
+64        <meta-data
+64-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\92cd7a7cc6d0a5dd194db16ac568e86d\workspace\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+65            android:name="com.google.android.gms.version"
+65-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\92cd7a7cc6d0a5dd194db16ac568e86d\workspace\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+66            android:value="@integer/google_play_services_version" />
+66-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\92cd7a7cc6d0a5dd194db16ac568e86d\workspace\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+67
+68        <activity
+68-->[androidx.compose.ui:ui-tooling-android:1.9.2] C:\Users\junio\.gradle\caches\9.3.1\transforms\45681d9eed4900059f885ed58f6b40ed\workspace\transformed\ui-tooling\AndroidManifest.xml:23:9-25:39
+69            android:name="androidx.compose.ui.tooling.PreviewActivity"
+69-->[androidx.compose.ui:ui-tooling-android:1.9.2] C:\Users\junio\.gradle\caches\9.3.1\transforms\45681d9eed4900059f885ed58f6b40ed\workspace\transformed\ui-tooling\AndroidManifest.xml:24:13-71
+70            android:exported="true" />
+70-->[androidx.compose.ui:ui-tooling-android:1.9.2] C:\Users\junio\.gradle\caches\9.3.1\transforms\45681d9eed4900059f885ed58f6b40ed\workspace\transformed\ui-tooling\AndroidManifest.xml:25:13-36
+71
+72        <provider
+72-->[androidx.emoji2:emoji2:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9bed6d10e47b43d6515c00fe94316551\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+73            android:name="androidx.startup.InitializationProvider"
+73-->[androidx.emoji2:emoji2:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9bed6d10e47b43d6515c00fe94316551\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+74            android:authorities="com.example.door.androidx-startup"
+74-->[androidx.emoji2:emoji2:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9bed6d10e47b43d6515c00fe94316551\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+75            android:exported="false" >
+75-->[androidx.emoji2:emoji2:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9bed6d10e47b43d6515c00fe94316551\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+76            <meta-data
+76-->[androidx.emoji2:emoji2:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9bed6d10e47b43d6515c00fe94316551\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+77-->[androidx.emoji2:emoji2:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9bed6d10e47b43d6515c00fe94316551\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+78                android:value="androidx.startup" />
+78-->[androidx.emoji2:emoji2:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9bed6d10e47b43d6515c00fe94316551\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+79            <meta-data
+79-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\junio\.gradle\caches\9.3.1\transforms\5528edfbadab4b86980256a63a12b3a1\workspace\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:29:13-31:52
+80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+80-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\junio\.gradle\caches\9.3.1\transforms\5528edfbadab4b86980256a63a12b3a1\workspace\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:30:17-78
+81                android:value="androidx.startup" />
+81-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\junio\.gradle\caches\9.3.1\transforms\5528edfbadab4b86980256a63a12b3a1\workspace\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:31:17-49
+82            <meta-data
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+83                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+84                android:value="androidx.startup" />
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+85        </provider>
+86
+87        <receiver
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+88            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+89            android:directBootAware="false"
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+90            android:enabled="true"
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+91            android:exported="true"
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+92            android:permission="android.permission.DUMP" >
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+94                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+97                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+98            </intent-filter>
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+100                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+101            </intent-filter>
+102            <intent-filter>
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+103                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\junio\.gradle\caches\9.3.1\transforms\9e37880c499793716611f9f23643bc7b\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+104            </intent-filter>
+105        </receiver>
+106    </application>
+107
+108</manifest>

@@ -1,0 +1,7 @@
+com.example.door.mobile-pngs-0 C:\Users\junio\AndroidStudioProjects\Door\mobile\build\generated\res\pngs\debug
+com.example.door.mobile-updated_navigation_xml-1 C:\Users\junio\AndroidStudioProjects\Door\mobile\build\generated\updated_navigation_xml\debug
+com.example.door.mobile-packageDebugResources-2 C:\Users\junio\AndroidStudioProjects\Door\mobile\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.door.mobile-packageDebugResources-3 C:\Users\junio\AndroidStudioProjects\Door\mobile\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.door.mobile-debug-4 C:\Users\junio\AndroidStudioProjects\Door\mobile\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.door.mobile-debug-5 C:\Users\junio\AndroidStudioProjects\Door\mobile\src\debug\res
+com.example.door.mobile-main-6 C:\Users\junio\AndroidStudioProjects\Door\mobile\src\main\res

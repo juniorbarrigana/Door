@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Project - Technical Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --hid-blue: #00529C;
+            --dark-bg: #121212;
+            --card-bg: #1E1E1E;
+            --text-main: #E0E0E0;
+            --accent: #00A3FF;
+            --gold: #FFD700;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-left: 5px solid var(--hid-blue);
+            padding-left: 20px;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: white;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: var(--accent);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: var(--hid-blue);
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .module-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .module-box {
+            background: #252525;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 3px solid var(--accent);
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--hid-blue);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .flow-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .step-num {
+            background: var(--accent);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+
+        code {
+            background: #000;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .module-grid { grid-template-columns: 1fr; }
+        }
+
+        .key-icon {
+            color: var(--gold);
+            font-size: 1.5em;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="subtitle">System Architecture</div>
+            <h1><span class="key-icon">🔑</span>Door Project</h1>
+            <p>Zero-Touch Building Access Solution via Wear OS</p>
+        </header>
+
+        <section class="card">
+            <h2>📋 Overview</h2>
+            <p>The <strong>Door Project</strong> is a bridge automation implementation that connects Wear OS devices to Android smartphones to streamline the use of HID Mobile Access technology. The solution eliminates the need for manual interactions with the phone to unlock the screen before approaching a door reader with the watch.</p>
+        </section>
+
+        <div class="module-grid">
+            <div class="module-box">
+                <span class="badge">WATCH MODULE (:app)</span>
+                <h3>The Stealth Trigger</h3>
+                <p>Executes a "silent" operation without a visible user interface.</p>
+                <ul>
+                    <li><strong>Bluetooth Guard:</strong> Active connection state validation.</li>
+                    <li><strong>Dynamic HID Search:</strong> Automatic package location using <code>contains("hid")</code>.</li>
+                    <li><strong>Translucent Bridge:</strong> 100% transparent activity.</li>
+                </ul>
+            </div>
+            <div class="module-box" style="border-top-color: var(--gold);">
+                <span class="badge" style="background: var(--gold); color: black;">MOBILE MODULE (:mobile)</span>
+                <h3>The Secure Bridge</h3>
+                <p>Handles system permissions and the device security bypass.</p>
+                <ul>
+                    <li><strong>WakeLock:</strong> Remotely wakes up the screen hardware.</li>
+                    <li><strong>Keyguard Dismiss:</strong> Requests lock screen dismissal via official API.</li>
+                    <li><strong>Stealth Mode:</strong> Auto-termination and hiding from recent apps.</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="card" style="margin-top: 30px;">
+            <h2>🚀 Operation Flow</h2>
+            <div class="flow-step">
+                <div class="step-num">1</div>
+                <div><strong>Activation:</strong> User taps the app icon on the watch.</div>
+            </div>
+            <div class="flow-step">
+                <div class="step-num">2</div>
+                <div><strong>Handshake:</strong> Watch sends <code>/unlock_phone</code> signal via Bluetooth.</div>
+            </div>
+            <div class="flow-step">
+                <div class="step-num">3</div>
+                <div><strong>Unlock:</strong> Phone wakes up and dismisses lock screen (if Smart Lock is active).</div>
+            </div>
+            <div class="flow-step">
+                <div class="step-num">4</div>
+                <div><strong>Transition:</strong> Watch immediately opens the <strong>HID Mobile Access</strong> app.</div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>🛡️ Security Requirements</h2>
+            <p>For optimal performance, the following is recommended:</p>
+            <ul>
+                <li><strong>Smart Lock:</strong> Configure the watch as a "Trusted Device" on the phone.</li>
+                <li><strong>Permissions:</strong> Grant <code>QUERY_ALL_PACKAGES</code> on the watch to detect the HID app.</li>
+                <li><strong>Bluetooth:</strong> Keep connection active (the app alerts if disabled).</li>
+            </ul>
+        </section>
+
+        <footer>
+            DOOR PROJECT &copy; 2024 - Internal Technical Documentation<br>
+            <small>File generated for High-Performance viewing</small>
+        </footer>
+    </div>
+</body>
+</html>

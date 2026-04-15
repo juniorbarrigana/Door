@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Sombra suave para a chave -->
+    <path
+        android:fillColor="#22000000"
+        android:pathData="M56,34c-6.6,0 -12,5.4 -12,12c0,4.8 2.8,9 7,10.9v18.1h4v4h4v-4h4V56.9c4.2,-1.9 7,-6.1 7,-10.9C70,39.4 64.6,34 58,34zM58,50c-2.2,0 -4,-1.8 -4,-4s1.8,-4 4,-4s4,1.8 4,4S60.2,50 58,50z" />
+
+    <!-- Corpo da chave em branco brilhante (estilo minimalista) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,32c-6.6,0 -12,5.4 -12,12c0,4.8 2.8,9 7,10.9v18.1h4v4h4v-4h4V54.9c4.2,-1.9 7,-6.1 7,-10.9C68,37.4 62.6,32 56,32zM56,48c-2.2,0 -4,-1.8 -4,-4s1.8,-4 4,-4s4,1.8 4,4S58.2,48 56,48z" />
+
+</vector>
