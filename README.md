@@ -20,6 +20,14 @@ The **Door** system is designed to eliminate friction in building access. It all
 
 ---
 
+## 🔒 Privacy & Security
+*   **Zero Data Collection:** This application does not collect, store, or transmit any personal data.
+*   **No Cloud Dependency:** All communication happens locally between your paired watch and phone via encrypted Bluetooth/Google Play Services.
+*   **Open Source:** The entire logic is transparent and can be audited by anyone.
+*   **Official APIs Only:** No root access, no unofficial exploits, and no interference with third-party app data.
+
+---
+
 ## 🛠️ System Architecture
 
 ### 1. Watch Module (`:app`) - "The Stealth Trigger"
