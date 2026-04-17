@@ -77,4 +77,12 @@ To ensure the best "zero-touch" experience:
 *   **Silent Interface:** The use of `Theme.Translucent` ensures the user never sees "windows opening and closing", only the direct transition to the door app.
 
 ---
+
+## ⚡ Hands-Free Usage (Advanced Tip)
+For a truly "Zero-Touch" experience, you can combine this app with **Wear OS Gestures**:
+*   **The "Knock-Knock" (Truz-Truz) Gesture:** Many Wear OS watches (like Pixel Watch or Galaxy Watch) allow you to map a "Double Flick" or "Shake" gesture to launch a specific app.
+*   **Remote Opening:** By mapping this gesture to the **Door** app, you can unlock your phone and trigger the HID reader while walking towards the door, without even touching your watch screen.
+*   **Distance Context:** Since the phone unlocks in your pocket and the HID app starts immediately, the door reader will detect your mobile credential as soon as you are in range.
+
+---
 *Document generated automatically by the AI Development Assistant.*
