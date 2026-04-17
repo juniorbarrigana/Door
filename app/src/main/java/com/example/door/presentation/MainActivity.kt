@@ -1,7 +1,6 @@
 package com.example.door.presentation
 
 import android.bluetooth.BluetoothManager
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
