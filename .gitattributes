@@ -1,0 +1,5 @@
+DOCUMENTATION_DOOR.html linguist-documentation
+*.xml linguist-detectable=false
+*.json linguist-detectable=false
+*.gradle linguist-detectable=false
+*.gradle.kts linguist-detectable=false
